@@ -1,0 +1,12 @@
+<!-- 继承⺟版不变的部分 -->
+{% extends "hello/base.html" %}
+<!-- 重写⺟版变的部分-->
+{% block title %} 个人信息 {% endblock %}
+<!-- 重写⺟版变的部分-->
+{% block content %}
+
+<p> 姓名: {{ user.name }} </p>
+<p> 密码: {{ user.password }} </p>
+<p> 性别: {{ user.sex }} </p>
+
+{% enfblock %}

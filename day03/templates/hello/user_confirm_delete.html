@@ -1,0 +1,13 @@
+<!-- 继承⺟版不变的部分 -->
+{% extends "hello/base.html" %}
+<!-- 重写⺟版变的部分-->
+{% block title %} 个人信息 {% endblock %}
+<!-- 重写⺟版变的部分-->
+{% block content %}
+
+<form action="" method="post">
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <input type="submit" value="确认" />
+</form>
+
+{% endblock %}
